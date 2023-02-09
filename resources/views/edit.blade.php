@@ -84,14 +84,14 @@
                         <div class="row">
                             <div class="col">
                                  <div class="row mb-3">
-                                    <label for="job" class="col-md-4 col-form-label text-md-end">{{ __('Job Title') }}</label>
+                                    <label for="job" class="col-md-4 col-form-label text-md-end">{{ __('Job Title') }} </label>
 
                                     <div class="col-md-6">
                                         <select name="job" id="job" class="form-select" required aria-label="Default select">
 
-                                        <option value="1" {{ $result->job==1 ?'selected':''}}>Account Manager</option>
-                                        <option value="2" {{ $result->job==2 ?'selected':''}}>Software Programmer</option>
-                                        <option value="3" {{ $result->job==3 ?'selected':''}}>HR Support</option>
+                                        <option value="1" {{ $result->job_title==1 ?'selected':''}}>Account Manager</option>
+                                        <option value="2" {{ $result->job_title==2 ?'selected':''}}>Software Programmer</option>
+                                        <option value="3" {{ $result->job_title==3 ?'selected':''}}>HR Support</option>
                                         </select>
 
                                         @error('job')

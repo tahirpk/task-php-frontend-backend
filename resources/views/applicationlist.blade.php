@@ -30,7 +30,7 @@
                         <td>{{ $data->email }}</td>
                         <td>{{ $data->dob }}</td>
                         <td>
-                               <a href="{{ url('edit/'.$data->id) }}" class="ml-4  text-sm btn btn-success">Edit</a>
+                               <a href="{{ url('backend/edit/'.$data->id) }}" class="ml-4  text-sm btn btn-success">Edit</a>
                                 |
                               <form method="POST" action="{{ route('destroy',$data->id) }}">
                                         @csrf

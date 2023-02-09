@@ -65,7 +65,7 @@ class ApplicationController extends Controller
          ]);
 
          if( $updated ) {
-          return  redirect('/applications');
+          return  redirect('backend/applications');
          }
         return redirect()->back();
     }
@@ -87,7 +87,7 @@ class ApplicationController extends Controller
          ]);
 
          if( $updated ) {
-          return  redirect('/applications');
+          return  redirect('backend/applications');
          }
         return redirect()->back();
     }
